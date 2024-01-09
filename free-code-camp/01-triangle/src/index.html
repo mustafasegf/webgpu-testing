@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGPU</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-800 overflow-hidden h-screen flex flex-col p-0 m-0">
+
+  <header class="bg-sky-500 w-full">
+    <h1 class="py-4 text-3xl font-bold text-center text-white"> </h1>
+  </header>
+
+  <div class="flex items-center justify-center flex-grow my-4">
+    <div id="canvas-container" class="w-full max-w-[calc(100vh*16/9)] h-full max-h-[calc(100vw*9/16)] relative">
+      <canvas id="canvas-webgpu" class="absolute top-0 left-0 w-full h-full"></canvas>
+    </div>
+  </div>
+
+  <footer class="bg-sky-500 w-full">
+    <p class="py-2 text-sm text-center text-white"></p>
+  </footer>
+
+  <script src="app.ts" type="module"></script>
+</body>
+
+</html>
